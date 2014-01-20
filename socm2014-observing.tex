@@ -26,7 +26,7 @@
 %
 % For tracking purposes - this is V3.1SP - APRIL 2009
 
-\documentclass{acm_proc_article-sp}
+\documentclass{acm_proc_article-sp} 
 
 \usepackage{hyperref}
 \usepackage{graphicx}
@@ -84,19 +84,19 @@
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
-       \email{foobar@ecs.soton.ac.uk}
+       \email{emax@ecs.soton.ac.uk}
 % 2nd. author
        \alignauthor Ramine Tinati\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
-       \email{foobar@ecs.soton.ac.uk}
+       \email{rt506@ecs.soton.ac.uk}
 %
        \alignauthor Daniel Alexander Smith\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
-       \email{foobar@ecs.soton.ac.uk}
+       \email{ds@ecs.soton.ac.uk}
        %
        \and 
        %
@@ -104,19 +104,19 @@
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
-       \email{foobar@ecs.soton.ac.uk}
+       \email{kmo@ecs.soton.ac.uk}
 %
        \alignauthor Wendy Hall\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
-       \email{foobar@ecs.soton.ac.uk}
+       \email{wh@ecs.soton.ac.uk}
 %
        \alignauthor Nigel Shadbolt\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
-       \email{foobar@ecs.soton.ac.uk}
+       \email{nrs@ecs.soton.ac.uk}
 }
 % There's nothing stopping you putting the seventh, eighth, etc.
 % author on the opening page (as the 'third row') but we ask,
@@ -137,7 +137,7 @@
 
 \section{Introduction}
 
-The concept of a Web Observatory~\cite{wobs} was introduced to investigate methods and mechanisms by which people, as a collective society, could be effectively studied in academic research settings, through the archival and analysis of the information traces they created online.  As such traces have become increasingly rich, driven by both increased use of the Web and the onslaught of always-on smartphones, wearable sensors, and other devices that can measure the activities people perform on and off- the Web, two shifts have occurred. The first is that the boundaries between the activities previously considered ``off-line'' and those that were considered ``online'' is rapidly dissolving, meaning that all activities are being increasingly reflected in information about them on-line. A result of this is that the quantity,  fidelity, sensitivity, and resulting value of this information is increasing - both in terms of potential value to individuals (as a multi-purposable accurate record of their activities), and to third parties seeking to offer and provide services to people based on their lifestyle(s) and needs. 
+The concept of a Web Observatory~\cite{Tiropanis2013,Hall2014} was introduced to investigate methods and mechanisms by which people, as a collective society, could be effectively studied in academic research settings, through the archival and analysis of the information traces they created online.  As such traces have become increasingly rich, driven by both increased use of the Web and the onslaught of always-on smartphones, wearable sensors, and other devices that can measure the activities people perform on and off- the Web, two shifts have occurred. The first is that the boundaries between the activities previously considered ``off-line'' and those that were considered ``online'' is rapidly dissolving, meaning that all activities are being increasingly reflected in information about them on-line. A result of this is that the quantity,  fidelity, sensitivity, and resulting value of this information is increasing - both in terms of potential value to individuals (as a multi-purposable accurate record of their activities), and to third parties seeking to offer and provide services to people based on their lifestyle(s) and needs. 
 
 An implication of these two trends is that Web Observatories will no longer
 be solely about Web or what we currently think of as ``Web-based activities''
@@ -168,9 +168,10 @@ We first approach this idea by outlining the key functions of a Web Observatory,
 % interactions of individuals on the Web \cite{wobs}
 
 \section{What are Web Observatories}
-A Web Observatory is a platform consisting of both a technical architecture and governance to enable the collection, sharing, querying, and analysis of Web Data \cite{Hall2013, Tiropanis2014}. Given that the Web is a rich resource of the current state of the world, the aim of such Web observatories was set to provide a means to monitor, analyse and understand the activity of humans, both as individuals and as a collective. To do so, a core capability of such observatories is to combine information from many disparate streams of data generated by independent Web-based sources, spanning services, social network platforms, applications and so forth, into integrated coherent data models.
+A Web Observatory is a platform consisting of both a technical architecture and governance to enable the collection, sharing, querying, and analysis of Web Data \cite{Hall2013, Tiropanis2013}. Given that the Web is a rich resource of the current state of the world, the aim of such Web observatories was set to provide a means to monitor, analyse and understand the activity of humans, both as individuals and as a collective. To do so, a core capability of such observatories is to combine information from many disparate streams of data generated by independent Web-based sources, spanning services, social network platforms, applications and so forth, into integrated coherent data models.
  
 \section{What are Personal Data Stores (PDSes)?}
+
 The rise of ``Web 2.0''  was marked by transition of the Web from an information publishing medium to being a general platform for all sorts of human interaction, spanning from synchrnous point-to-point interaction to many sorts of one-to-many information exchange mechanisms.  As web platforms became more sophisticated and complex, however, we also observed a trend towards greater centralisation; although many factors were involved, among them was the fact that building complex web services and applications simply required more investment and expertise than most individuals could themselves muster; therefore, the construction of such services quickly became the domain of venture-backed startups. These startups, the nascent Facebooks, Dropboxes and Googles quickly amassed huge quantities of personal information as individuals flocked to their use for their services and capabilities.  Seeking to derive revenue from such troves of user information, such companies forged the first versions of now a multi-billion pound a year surveillance-and-analytics business model.  Although the kinds of content being amassed began as a few social network profiles and blog posts, it quickly grew to encompass the entirety of personal data people keep {\em or generate}, from files and documents to film and music archives. 
 
 Thus began a migration of personal digital artefacts from individually-administered personal computers into various information spaces of the web.  he aim of PDSes is to start to re-balance the this data inequality by bolstering the capabilities of individuals for managing, curating, sharing and using data themselves and for their own benefit.  The idea is not for such capabilities to replace services, nor for individuals to take their data out of the rich ecosystems that exist today (a feat which would be practically impossible, not to mention potentially destructive), but instead to enable people to collect, maintain and effectively derive value from their own data collections directly on the device(s) under their control.  The combination of such capabilities and derived value provides an incentive for individuals to take responsibility for, and invest effort in, the preservation and curation of their data collections, turning to external third parties for specialised services only where needed.  The aim of such development would be to try to restore some balance by providing a locus for subject-centric management of data, to complement (and in some cases replace) the current paradigm of organisation-centric data management.
@@ -274,7 +275,7 @@ personal data store architecture. Specifically that of:
 \begin{enumerate}
 \item Distributed sharing
 \item Distributed authentication
-\item Distributed redundancy, synchronisation and replication
+\item Distributed redundancy, synchronisation and replication 
 \end{enumerate}
 
 The problems of distributed sharing include issues of trusting external servers to be who they claim; and determining which information should be shared and which should be kept private.
