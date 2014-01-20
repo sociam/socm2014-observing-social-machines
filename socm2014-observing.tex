@@ -28,6 +28,8 @@
 
 \documentclass{acm_proc_article-sp}
 
+\usepackage{hyperref}
+
 \begin{document}
 
 \title{1,000 Home Telescopes: Observing Social Machines through Personal Data Stores}
@@ -61,7 +63,7 @@
 % without further effort on your part as the last section in
 % the body of your article BEFORE References or any Appendices.
 
-\numberofauthors{5} %  in this sample file, there are a *total*
+\numberofauthors{6} %  in this sample file, there are a *total*
 % of EIGHT authors. SIX appear on the 'first-page' (for formatting
 % reasons) and the remaining two appear in the \additionalauthors section.
 %
@@ -90,21 +92,25 @@ Kieron O'Hara\titlenote{}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
        \email{foobar@ecs.soton.ac.uk} \\
+\alignauthor
 Ramine Tinati\titlenote{}\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
        \email{foobar@ecs.soton.ac.uk}
+\alignauthor
 Daniel Alexander Smith\titlenote{}\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
        \email{foobar@ecs.soton.ac.uk}
+\alignauthor
 Wendy Hall\titlenote{}\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
        \email{foobar@ecs.soton.ac.uk}
+\alignauthor
 Nigel Shadbolt\titlenote{}\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
@@ -126,15 +132,7 @@ Nigel Shadbolt\titlenote{}\\
 \begin{abstract}
 \end{abstract}
 
-% A category with the (minimum) three required fields
-\category{H.4}{Information Systems Applications}{Miscellaneous}
-%A category including the fourth, optional field follows...
-\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
-
-\terms{Theory}
-
-\keywords{ACM proceedings, \LaTeX, text tagging} % NOT required for Proceedings
-
+\keywords{Web Observatories, Personal Data Stores} % NOT required for Proceedings
 
 \section{Introduction}
 
@@ -159,7 +157,7 @@ rather, these observatories will be about the individual, multifaceted lives
 of people.  From this perspective, it is unsurprising that significant privacy
 concerns may be raised about the large-scale collection of such data, 
 whether they be for scientific study or commercial application.  In particular,
-recent efforts such as \emph{Care.data}\footnote{Care.data - A Modern Data Service for the NHS \url{http://care.data}}
+recent efforts such as \emph{Care.data}~\footnote{Care.data - A Modern Data Service for the NHS \url{http://care.data}}
 have received widespread criticism about its aggregation of millions of Britons'
 anonymised NHS patient records, even though the purpose of this
 collection is for greatly advancing access to data for use in medical research
