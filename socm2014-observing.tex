@@ -79,39 +79,39 @@
 % e-mail address with \email.
 %
 % 1st. author
-\alignauthor
-Max Van Kleek\titlenote{}\\
+       \alignauthor Max Van Kleek\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
        \email{foobar@ecs.soton.ac.uk}
 % 2nd. author
-\alignauthor
-Ramine Tinati\titlenote{}\\
+       \alignauthor Ramine Tinati\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
        \email{foobar@ecs.soton.ac.uk}
-\alignauthor
-Daniel Alexander Smith\titlenote{}\\
+%
+       \alignauthor Daniel Alexander Smith\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
        \email{foobar@ecs.soton.ac.uk}
-\alignauthor
-Kieron O'Hara\titlenote{}\\
-       \affaddr{Web and Internet Science}\\
-       \affaddr{University of Southampton}\\
-       \affaddr{Southampton, UK}\\
-       \email{foobar@ecs.soton.ac.uk} \\
-\alignauthor
-Wendy Hall\titlenote{}\\
+       %
+       \and 
+       %
+       \alignauthor Kieron O'Hara\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
        \email{foobar@ecs.soton.ac.uk}
-\alignauthor
-Nigel Shadbolt\titlenote{}\\
+%
+       \alignauthor Wendy Hall\\
+       \affaddr{Web and Internet Science}\\
+       \affaddr{University of Southampton}\\
+       \affaddr{Southampton, UK}\\
+       \email{foobar@ecs.soton.ac.uk}
+%
+       \alignauthor Nigel Shadbolt\\
        \affaddr{Web and Internet Science}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
@@ -263,6 +263,27 @@ Perhaps the ultimate set of challenges, however, pertain to accommodating change
 % Maybe - I’ve put something about durability in an earlier challenge, but I think that this is separate from the idea of longevity and durability. But the advantage of ending with this challenge is that it is in a sense the biggest, so I like it as it stands. We do need to make sure that this challenge is clearly distinct from the first two. I think it is, but maybe there’s a way of phrasing this that makes it clearer.
 
 Looking forward at some of the ways such technologies might impact information activities, some have looked at the possible consequences and implications that ever-increasing information capture and access might have on the kinds of activities mentioned above.  While Bell and Gemmel have argued \cite{bell2010total} that such increased capture and access could create near-perfect records of our daily lives, allowing people to examine with unprecedented scrutiny their everyday activities, others such as Mayer-Schonberger have argued that such a utopian views overlooks a great number of potential unintended consequences \cite{mayer-schonberger2013}.   
+
+
+
+Additionally, there are operational challenges in implementing a distributed
+personal data store architecture. Specifically that of:
+
+\begin{enumerate}
+\item Distributed sharing
+\item Distributed authentication
+\item Distributed redundancy, synchronisation and replication
+\end{enumerate}
+
+The problems of distributed sharing include issues of trusting external servers to be who they claim; and determining which information should be shared and which should be kept private.
+
+The problems of authentication are that of trusted identification of users within a distributed system. In a traditional system, a user would login to a system in order to authenticate, however in a distributed system, the user would have to register for each individual remote system, and associate each of their accounts together. Instead, we can use distributed identification system such as OpenID in order to enable a single identity across systems.
+
+The problems of synchronisation are that users who want to protect their data against catastrophic loss (i.e., from hardware failure), from network failure,
+or from unexpected intercept. A solution is to provide a system that automatically synchronises data between multiple redundant servers, and automatically fails-over to online servers when others go offline.
+
+
+
 
 % Is the above para a direct comment on the preceding challenge? I wonder whether it wouldn’t be better placed elsewhere. It’s a good point to make - it might even be something for the intro.
 
