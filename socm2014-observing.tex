@@ -32,7 +32,7 @@
 
 \begin{document}
 
-\title{1,000 Home Telescopes: Observing Social Machines through Personal Data Stores}
+\title{7 Billion Home Telescopes: Observing Social Machines through Personal Data Stores}
 % \subtitle{[Extended Abstract]
 % \titlenote{A full version of this paper is available as
 % \textit{Author's Guide to Preparing ACM SIG Proceedings Using
@@ -136,10 +136,10 @@
 
 \section{Introduction}
 
-The concept of a Web Observatory\cite{wobs} is one around investigating methods 
-and mechanisms by which individuals (as a collective society) can be effectively 
-studied through the information traces they create online. As such traces become 
-increasingly rich, driven by both increased use of the Web and the onslaught of 
+The concept of a Web Observatory~\cite{wobs} was introduced to investigate methods 
+and mechanisms by which people, as a collective society, could be effectively studied 
+in academic research settings, by archiving and analysing the information traces they 
+created online.  As such traces become increasingly rich, driven by both increased use of the Web and the onslaught of 
 always-on smartphones, wearable sensors, that can measure the activities people 
 perform on and off- the Web, two shifts are occurring. The first is that the 
 boundaries between the activities previously considered ``off-line'' and those that were
@@ -156,12 +156,12 @@ such as participating in online communities, social networks, and so on;
 rather, these observatories will be about the individual, multifaceted lives 
 of people.  From this perspective, it is unsurprising that significant privacy
 concerns may be raised about the large-scale collection of such data, 
-whether they be for scientific study or commercial application.  In particular,
-recent efforts such as \emph{Care.data}~\footnote{Care.data - A Modern Data Service for the NHS \url{http://care.data}}
-have received widespread criticism about its aggregation of millions of Britons'
-anonymised NHS patient records, even though the purpose of this
-collection is for greatly advancing access to data for use in medical research
-directly relevant to increased collective wellbeing \cite{caredata}.
+whether they be for scientific study or commercial application.  For example,
+even efforts driven by public bodies such as the NHS, such as the newly established
+\emph{Care.data}~\footnote{Care.data - A Modern Data Service for the NHS \url{http://care.data}}
+have received widespread criticism (e.g. \cite{RameshNHS}) about its aggregation of millions of Britons'
+anonymised NHS patient records, even though such collection could drive
+medical research that might greatly advance the collective well-being \cite{caredata}.
 
 This in general is reflective of a core dilemma faced in the building of such
 observatories; Web observatories will contain information
@@ -170,6 +170,17 @@ domains, e.g. from medicine, to human-centered design, to cultural anthropology,
 but such repositories also represent unprecedented privacy risks by potentially
 containing detailed, high-fidelity information about people's lives. 
 
+In this position paper, we propose that a technical architecture about the way this sort
+of information is handled and stored may be able to resolve this dilemma. In
+particular, we introduce the notion of \emph{personal data store} as a core
+atomic component in a new kind of web observatory; one that is purely distributed
+and in collective control of its potentially milllions (or billions) of participants.
+We first approach this idea by outlining the key functions of a Web Observatory 
+through what they are meant to achieve, which we follow with a definition of 
+Personal Data Stores, including a summary of work done in this space before now.
+Then, we follow this up with the technical and societal implications of applying
+PDS architectures to building Web Observatories, and ways one might preserve 
+anonymity and privacy in such settings.
 
 % The Web has profoundly changed the ways that individuals live their day-to-day lives
 % through the connectedness afforded by the ability to connect with anyone, anywhere
@@ -264,6 +275,11 @@ Perhaps the ultimate set of challenges, however, pertain to accommodating change
 
 Looking forward at some of the ways such technologies might impact information activities, some have looked at the possible consequences and implications that ever-increasing information capture and access might have on the kinds of activities mentioned above.  While Bell and Gemmel have argued \cite{bell2010total} that such increased capture and access could create near-perfect records of our daily lives, allowing people to examine with unprecedented scrutiny their everyday activities, others such as Mayer-Schonberger have argued that such a utopian views overlooks a great number of potential unintended consequences \cite{mayer-schonberger2013}.   
 
+% Is the above para a direct comment on the preceding challenge? I wonder whether it wouldn’t be better placed elsewhere. It’s a good point to make - it might even be something for the intro.
+
+The difficulties that this community has encountered have led us to reconsider, from the ground up, the need(s) these platforms are meant to address, so that they can be used to design a platform that will fulfill needs beyond secure data storage, towards new applications that promote the more effective use of data in both personal and social contexts.
+
+
 
 
 Additionally, there are operational challenges in implementing a distributed
@@ -285,15 +301,15 @@ or from unexpected intercept. A solution is to provide a system that automatical
 
 
 
-% Is the above para a direct comment on the preceding challenge? I wonder whether it wouldn’t be better placed elsewhere. It’s a good point to make - it might even be something for the intro.
-
-The difficulties that this community has encountered have led us to reconsider, from the ground up, the need(s) these platforms are meant to address, so that they can be used to design a platform that will fulfill needs beyond secure data storage, towards new applications that promote the more effective use of data in both personal and social contexts.
-
-
 The acm\_proc\_article-sp document class file itself is chock-full of succinct
 and helpful comments.  If you consider yourself a moderately
 experienced to expert user of \LaTeX, you may find reading
 it useful but please remember not to change it.
+
+\bibliographystyle{abbrv}
+\bibliography{socm2014-observing}
+
 \balancecolumns
 % That's all folks!
+
 \end{document}
