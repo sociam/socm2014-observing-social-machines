@@ -6,16 +6,16 @@
 % LaTeX2e document class file for Conference Proceedings submissions.
 % ----------------------------------------------------------------------------------------------------------------
 % This .tex file (and associated .cls V3.2SP) *DOES NOT* produce:
-%       1) The Permission Statement
-%       2) The Conference (location) Info information
-%       3) The Copyright Line with ACM data
-%       4) Page numbering
+%     1) The Permission Statement
+%     2) The Conference (location) Info information
+%     3) The Copyright Line with ACM data
+%     4) Page numbering
 % ---------------------------------------------------------------------------------------------------------------
 % It is an example which *does* use the .bib file (from which the .bbl file
 % is produced).
 % REMEMBER HOWEVER: After having produced the .bbl file,
 % and prior to final submission,
-% you need to 'insert'  your .bbl file into your source .tex file so as to provide
+% you need to 'insert' your .bbl file into your source .tex file so as to provide
 % ONE 'self-contained' source file.
 %
 % Questions regarding SIGS should be sent to
@@ -26,9 +26,10 @@
 %
 % For tracking purposes - this is V3.1SP - APRIL 2009
 
-\documentclass{acm_proc_article-sp}
+\documentclass{acm_proc_article-sp} 
 
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \begin{document}
 
@@ -63,7 +64,7 @@
 % without further effort on your part as the last section in
 % the body of your article BEFORE References or any Appendices.
 
-\numberofauthors{6} %  in this sample file, there are a *total*
+\numberofauthors{6} % in this sample file, there are a *total*
 % of EIGHT authors. SIX appear on the 'first-page' (for formatting
 % reasons) and the remaining two appear in the \additionalauthors section.
 %
@@ -79,43 +80,43 @@
 % e-mail address with \email.
 %
 % 1st. author
-\alignauthor
-Max Van Kleek\titlenote{}\\
-       \affaddr{Web and Internet Science}\\
-       \affaddr{University of Southampton}\\
-       \affaddr{Southampton, UK}\\
-       \email{emax@ecs.soton.ac.uk}
+     \alignauthor Max Van Kleek\\
+     \affaddr{Web and Internet Science}\\
+     \affaddr{University of Southampton}\\
+     \affaddr{Southampton, UK}\\
+     \email{emax@ecs.soton.ac.uk}
 % 2nd. author
-\alignauthor
-Daniel Alexander Smith\titlenote{}\\
-       \affaddr{Web and Internet Science}\\
-       \affaddr{University of Southampton}\\
-       \affaddr{Southampton, UK}\\
-       \email{ds@ecs.soton.ac.uk}
-\alignauthor
-Ramine Tinati\titlenote{}\\
-       \affaddr{Web and Internet Science}\\
-       \affaddr{University of Southampton}\\
-       \affaddr{Southampton, UK}\\
-       \email{rt509@ecs.soton.ac.uk}
-\alignauthor
-Kieron O'Hara\titlenote{}\\
-       \affaddr{Web and Internet Science}\\
-       \affaddr{University of Southampton}\\
-       \affaddr{Southampton, UK}\\
-       \email{kmo@ecs.soton.ac.uk} \\
-\alignauthor
-Wendy Hall\titlenote{}\\
-       \affaddr{Web and Internet Science}\\
-       \affaddr{University of Southampton}\\
-       \affaddr{Southampton, UK}\\
-       \email{wh@ecs.soton.ac.uk}
-\alignauthor
-Nigel Shadbolt\titlenote{}\\
-       \affaddr{Web and Internet Science}\\
-       \affaddr{University of Southampton}\\
-       \affaddr{Southampton, UK}\\
-       \email{nrs@ecs.soton.ac.uk}
+     \alignauthor Ramine Tinati\\
+     \affaddr{Web and Internet Science}\\
+     \affaddr{University of Southampton}\\
+     \affaddr{Southampton, UK}\\
+     \email{rt506@ecs.soton.ac.uk}
+%
+     \alignauthor Daniel Alexander Smith\\
+     \affaddr{Web and Internet Science}\\
+     \affaddr{University of Southampton}\\
+     \affaddr{Southampton, UK}\\
+     \email{ds@ecs.soton.ac.uk}
+     %
+     \and 
+     %
+     \alignauthor Kieron O'Hara\\
+     \affaddr{Web and Internet Science}\\
+     \affaddr{University of Southampton}\\
+     \affaddr{Southampton, UK}\\
+     \email{kmo@ecs.soton.ac.uk}
+%
+     \alignauthor Wendy Hall\\
+     \affaddr{Web and Internet Science}\\
+     \affaddr{University of Southampton}\\
+     \affaddr{Southampton, UK}\\
+     \email{wh@ecs.soton.ac.uk}
+%
+     \alignauthor Nigel Shadbolt\\
+     \affaddr{Web and Internet Science}\\
+     \affaddr{University of Southampton}\\
+     \affaddr{Southampton, UK}\\
+     \email{nrs@ecs.soton.ac.uk}
 }
 % There's nothing stopping you putting the seventh, eighth, etc.
 % author on the opening page (as the 'third row') but we ask,
@@ -136,51 +137,15 @@ Nigel Shadbolt\titlenote{}\\
 
 \section{Introduction}
 
-The concept of a Web Observatory~\cite{wobs} was introduced to investigate methods 
-and mechanisms by which people, as a collective society, could be effectively studied 
-in academic research settings, by archiving and analysing the information traces they 
-created online.  As such traces become increasingly rich, driven by both increased use of the Web and the onslaught of c
-always-on smartphones, wearable sensors, that can measure the activities people 
-perform on and off- the Web, two shifts are occurring. The first is that the 
-boundaries between the activities previously considered ``off-line'' and those that were
-considered ``online'' are dissolving, meaning that all activities are being increasingly 
-reflected in information about them on-line. A result of this is that the quantity, 
-fidelity, sensitivity, and resulting value of this information is increasing -
-both in terms of potential value to individuals (as a multi-purposable accurate record 
-of their activities), and to third parties seeking to offer and provide services 
-to people based on their lifestyle(s) and needs. 
+The concept of a Web Observatory~\cite{Tiropanis2013,Hall2014} was introduced to investigate methods and mechanisms by which people, as a collective society, could be effectively studied in academic research settings, through the archival and analysis of the information traces they created online. As such traces have become increasingly rich, driven by both increased use of the Web and the onslaught of always-on smartphones, wearable sensors, and other devices that can measure the activities people perform on and off- the Web, two shifts have occurred. The first is that the boundaries between the activities previously considered ``off-line'' and those that were considered ``online'' is rapidly dissolving, meaning that all activities are being increasingly reflected in information about them on-line. A result of this is that the quantity, fidelity, sensitivity, and resulting value of this information is increasing - both in terms of potential value to individuals (as a multi-purposable accurate record of their activities), and to third parties seeking to offer and provide services to people based on their lifestyle(s) and needs. 
 
-An implication of these two trends is that Web Observatories will no longer
-be solely about Web or what we currently think of as ``Web-based activities''
-such as participating in online communities, social networks, and so on; 
-rather, these observatories will be about the individual, multifaceted lives 
-of people.  From this perspective, it is unsurprising that significant privacy
-concerns may be raised about the large-scale collection of such data, 
-whether they be for scientific study or commercial application.  For example,
-even efforts driven by public bodies such as the NHS, such as the newly established
-\emph{Care.data}~\footnote{Care.data - A Modern Data Service for the NHS \url{http://care.data}}
-have received widespread criticism (e.g. \cite{RameshNHS}) about its aggregation of millions of Britons'
-anonymised NHS patient records, even though such collection could drive
-medical research that might greatly advance the collective well-being \cite{caredata}.
+An implication of these two trends is that Web Observatories will no longer be solely about Web or what we currently think of as ``Web-based activities'' such as participating in online communities, social networks, and so on; rather, these observatories will be about the individual, multifaceted lives of people. From this perspective, it is unsurprising that significant privacy concerns may be raised about the large-scale collection of such data, whether they be for scientific study or commercial application. For example, even efforts driven by public bodies such as the NHS, such as the newly founded \emph{Care.data}~\footnote{Care.data - A Modern Data Service for the NHS \url{http://care.data}} have received widespread criticism (e.g. \cite{RameshNHS}) about its aggregation of millions of Britons' anonymised NHS patient records, even though such collection could drive medical research that might greatly advance the collective well-being \cite{de2006use}.
 
-This in general is reflective of a core dilemma faced in the building of such
-observatories; Web observatories will contain information
-of increasing potential value to advancing scientific and academic research across
-domains, e.g. from medicine, to human-centered design, to cultural anthropology, 
-but such repositories also represent unprecedented privacy risks by potentially
-containing detailed, high-fidelity information about people's lives. 
+This in general is reflective of a core dilemma faced in the building of such observatories; Web observatories will contain information of increasing potential value to making fundamental advances across research domains (spanning medicine, to human-centred design, to cultural anthropology, for example) but such repositories also represent unprecedented privacy risks and targets for identity thieves, misuse by commercial entities and so on, being comprised of aggregations of detailed, high-fidelity information about people's lives. 
 
-In this position paper, we propose that a technical architecture about the way this sort
-of information is handled and stored may be able to resolve this dilemma. In
-particular, we introduce the notion of \emph{personal data store} as a core
-atomic component in a new kind of web observatory; one that is purely distributed
-and in collective control of its potentially milllions (or billions) of participants.
-We first approach this idea by outlining the key functions of a Web Observatory 
-through what they are meant to achieve, which we follow with a definition of 
-Personal Data Stores, including a summary of work done in this space before now.
-Then, we follow this up with the technical and societal implications of applying
-PDS architectures to building Web Observatories, and ways one might preserve 
-anonymity and privacy in such settings.
+In this position paper, we examine one potential solution path towards resolving this dilemma: a technical architecture that changes the core assumptions surrounding the roles of data observer, aggregator, and broker proposed in Web Observatory research thus far. Specifically, we introduce the notion of \emph{personal data store} as a core atomic component in a new kind of Web observatory; one that is purely distributed and in the collective control of all of its data sources -- the individuals whose data form the observatory. 
+
+We first approach this idea by outlining the key functions of a Web Observatory, through what they are meant to achieve, which we follow with a definition of Personal Data Stores, including a summary of work done in this space before now. Then, we follow this up with the technical and societal implications of applying PDS architectures to building Web Observatories, focusing on identifying core challenges in this space, including preserving anonymity and privacy of members while promoting data sharing in such settings.
 
 % The Web has profoundly changed the ways that individuals live their day-to-day lives
 % through the connectedness afforded by the ability to connect with anyone, anywhere
@@ -191,98 +156,158 @@ anonymity and privacy in such settings.
 % systematically studied through digital information traces created from the
 % interactions of individuals on the Web \cite{wobs}
 
-\section{What are Web Observatories?}
-
-
+\section{What are Web Observatories}
+A Web Observatory is a platform consisting of both a technical architecture and governance to enable the collection, sharing, querying, and analysis of Web Data \cite{Hall2013, Tiropanis2013}. Given that the Web is a rich resource of the current state of the world, the aim of such Web observatories was set to provide a means to monitor, analyse and understand the activity of humans, both as individuals and as a collective. To do so, a core capability of such observatories is to combine information from many disparate streams of data generated by independent Web-based sources, spanning services, social network platforms, applications and so forth, into integrated coherent data models.
+ 
 \section{What are Personal Data Stores (PDSes)?}
 
-The aim of PDSes is to start to narrow the aforementioned data inequality by bolstering the capabilities of individuals for managing, curating, sharing and using data themselves and for their own benefit.  The idea is not for such capabilities to replace services, nor for individuals to take their data out of the rich ecosystems that exist today (a feat which would be practically impossible, not to mention potentially destructive), but instead to enable people to collect, maintain and effectively derive value from their own data collections directly on the device(s) under their control.  The combination of such capabilities and derived value provides an incentive for individuals to take responsibility for, and invest effort in, the preservation and curation of their data collections, turning to external third parties for specialised services only where needed.  The aim of such development would be to try to restore some balance by providing a locus for subject-centric management of data, to complement (and in some cases replace) the current paradigm of organisation-centric data management.
+The rise of ``Web 2.0'' was marked by transition of the Web from an information publishing medium to being a general platform for all sorts of human interaction, spanning from synchronous point-to-point interaction to many sorts of one-to-many information exchange mechanisms. As Web platforms became more sophisticated and complex, however, we also observed a trend towards greater centralisation; although many factors were involved, among them was the fact that building complex Web services and applications simply required more investment and expertise than most individuals could themselves muster; therefore, the construction of such services quickly became the domain of venture-backed startups. These startups, the nascent Facebooks, Dropboxes and Googles quickly amassed huge quantities of personal information as individuals flocked to their use for their services and capabilities. Seeking to derive revenue from such troves of user information, such companies forged the first versions of now a multi-billion pound a year surveillance-and-analytics business model. Although the kinds of content being amassed began as a few social network profiles and blog posts, it quickly grew to encompass the entirety of personal data people keep {\em or generate}, from files and documents to film and music archives. 
+
+Thus began a migration of personal digital artefacts from individually-administered personal computers into various information spaces of the Web. The aim of PDSes is to start to re-balance the this data inequality by bolstering the capabilities of individuals for managing, curating, sharing and using data themselves and for their own benefit. The idea is not for such capabilities to replace services, nor for individuals to take their data out of the rich ecosystems that exist today (a feat which would be practically impossible, not to mention potentially destructive), but instead to enable people to collect, maintain and effectively derive value from their own data collections directly on the device(s) under their control. The combination of such capabilities and derived value provides an incentive for individuals to take responsibility for, and invest effort in, the preservation and curation of their data collections, turning to external third parties for specialised services only where needed. The aim of such development would be to try to restore some balance by providing a locus for subject-centric management of data, to complement (and in some cases replace) the current paradigm of organisation-centric data management.
 
 Arriving at an operational definition, we define PDSes as follows:
 
 \begin{quote}
 
-	A personal data store is a set of capabilities built into a software platform or service that allows an individual to manage and maintain his or her digital information, artefacts and assets, longitudinally and self-sufficiently, so it may be used practically when and where it can for the individual’s benefit as perceived by the individual, and shared with others directly, without relying on external third parties. 
+	A personal data store is a set of capabilities built into a software platform or service that allows an individual to manage and maintain his or her digital information, artefacts and assets, longitudinally and self-sufficiently, so it may be used practically when and where it can for the individual's benefit as perceived by the individual, and shared with others directly, without relying on external third parties. 
 
 \end{quote}
 
-This description leaves undefined the kinds of activities that might constitute ``managing'', ``maintaining'', ``controlling fully'' or ``using'' this information, nor even what kind(s) of information, owned by whom, that we are talking about.  Fortunately, significant insight pertaining to many ways individuals readily use information (in both on-line and off-line contexts) has been gained through studies conducted at the intersection of psychology and computer science, particularly the Human-Computer Interaction (HCI) research community.  Beyond insights about existing information practices, various ideas have been proposed dating back nearly a century about how technology might change human-information and human-human relationship, modulated by new emerging information technology.
+This description leaves undefined the kinds of activities that might constitute ``managing'', ``maintaining'', ``controlling fully'' or ``using'' this information, nor even what kind(s) of information, owned by whom, that we are talking about. Fortunately, significant insight pertaining to many ways individuals readily use information (in both on-line and off-line contexts) has been gained through studies conducted at the intersection of psychology and computer science, particularly the Human-Computer Interaction (HCI) research community. It is from this that PDS requirements have been derived by researchers working on such platforms (e.g. \cite{pds-chapter}). Such studies have documented the breadth and often idiosyncratic nature of people's personal information practices that have been driven by both the fragmented nature of people's information spaces (arising, in part from the lack of integration among apps and siloed data sources of the Web), and the remarkable ingenuity with which individuals often work around such limitations in order to manage their information archives. 
 
-\subsection{Historical Reflections From Memex ...}
+\section{Personal Web Observatories}
 
-The genesis of an individual-centric personal data archive pre-dates digital computers entirely, to Vannevar Bush's Memex vision of 1945\cite{memex}, which proposed a mechanical framework for supporting the collection, archiving, and organisation of information to facilitate later cross-reference and retrieval.  Among the important contributions of this article was the significant emphasis on reducing the effort needed to capture and retrieve information, due effort being the primary impediment towards effective and frequent information use.  To this end, Memex proposed that individuals could wear capture devices on their bodies (a camera strapped to the forehead), store such information compactly, conveniently and indefinitely, and retrieve it later through an associative mechanism modelled upon the human memory, queried naturally via gesture.
+Combining the two ideas of a PDS with the goals of a Web Observatory, a logical first step we propose is that of a \emph{Personal Web Observatory} (PWO), a technical platform that, first and foremost, enables individuals to consolidate and archive their data currently dispersed among multiple sources. Then to use such a consolidated archive to serve as a kind of ``analytical mirror'' that can enable an individual to accurately gauge and reflect upon the multi-facted states of their lives and well-being. Such consolidated data could be used, for example, for better time budgeting, stress management, budget-planning (through the consolidation of data streams representing spending), fitness and health management (such as through sensed data streams representing the individual's vital statistics and activities). 
 
-Two additional early projects that explored how such information archives might be realised were Ted Nelson’s Xanadu \cite{nelson1987literary} and Douglas Engelbart's NLS \cite{engelbart1968research}.  Both proposed that information environments could be interlinked through a global network of knowledge sharing, demonstrating many ideas in the 1960’s that would not be realised in commercial systems for decades.  While the former focused on hypertext and distributed collaboration, the latter focused on structured data collections, including data navigation, creation and management.  Engelbart demonstrated an actual prototype of NLS in 1969, capable of synchronous collaboration, complete through a graphical user interface, that incorporated dynamic hierarchies, hyperlinks, and multi-view representations  
+With more sophisticated functionality, such a PWO might monitor one's social interactions, and correlate such interactions with states of well-being; do certain people seem to be the sources of stress or enjoyment? Similarly, such information might be used to `debug' an individual's other states of well-being, such as to identify why random, sporadic headaches might be occurring, such as by correlating such incidences with particular activities, sleep levels, presence in particular locations, with certain times of the year or periods of the month, or with certain activities. Such ``small data'' analytics, while sparse, could be made statistically viable when gathered longitudinally over time, and offer the advantage that they reflect a single person's idiosyncratic patterns and correlations.
 
-The introduction of the personal computer (PC) in 1984 provoked the development of the first generation of digital personal information management tools, consisting of a variety of application software products designed to help individuals create and maintain collections of digital data, ranging from flexible, schema-agnostic personal database systems like Filemaker \footnote{Filemaker - \url{www.filemaker.com}}, to specific data types, such as digital calendaring tools, and ``digital Rolodex'' address books.  Seeking to appeal to the first generation of personal computer users, many of these applications borrowed metaphors from paper-based information collection tools, from the notion of ``documents'', to that of files and folders, and even notebook ledgers and personal diaries. Along with this deliberate shaping of digital information into forms designed to be familiar with paper information organiser came interaction metaphors and organisation methods for them; from deletion of information by ``throwing in the rubbish bin'' to ``desktop'' and ``filing cabinet''-based based information organisation and arrangement.
+\section{Linked, Distributed, Person Web Observatories}
 
-Meanwhile, research in personal information management continued to pursue the vision put forth by Memex, towards methods of automatically building archives of personal life activities and experiences, so that these might be used as external memory prostheses.  The pursuit of this vision was partially responsible for the development of handheld and early wearable computing technology, such as the Xerox PARC Tab \cite{schilit1993parctab}, arguably the first hand-held computer, which ran arguably the first automatic location-based personal lifelog, PEPYS~\cite{newman1991pepys}.  Many systems that captured other aspects of context and activities soon followed, such as the Remembrance Agent by Rhodes et al., and the life archive by Clarkson et al., both at the MIT Media Lab's ``Cyborg'' Wearable Computing group. Since the breadth of kinds of activities and experiences that such systems captured transcended paper documents, such research required re-thinking the shape of data away from paper-metaphors to other kinds of collections, including \emph{information streams} (e.g., Lifestreams \cite{fertig1996lifestreams}) and chronological \emph{lifelogs}, such as MyLifeBits \cite{gemmell2002mylifebits}.
+A next logical step from a PWO, then, is towards overcoming the single-individual analytical limitations of a PWO by enabling individuals to combine their data for the purposes of expanding analytical capabilities.  The remainder of this paper examines what such a capability would entail, and proposes our progress towards a potential implementation of such a system, a platform we call INDX. 
 
-% Good selection of stuff in the previous para - but why comment out the next sentence? Still seems relevant, although we should probably take out the “next decade” reference
+\subsubsection{Challenges towards Realising Linked PWOs}
 
-% The next decade saw specific evaluations of lifelogging in various specialised contexts, including healthcare for chronic disease maintenance, including memory prosthesis applications for Alzheimer's patients \cite{}, and cognitive behavioural therapy.
+% The genesis of an individual-centric personal data archive pre-dates digital computers entirely, to Vannevar Bush's Memex vision of 1945\cite{memex}, which proposed a mechanical framework for supporting the collection, archiving, and organisation of information to facilitate later cross-reference and retrieval. Among the important contributions of this article was the significant emphasis on reducing the effort needed to capture and retrieve information, due effort being the primary impediment towards effective and frequent information use. To this end, Memex proposed that individuals could wear capture devices on their bodies (a camera strapped to the forehead), store such information compactly, conveniently and indefinitely, and retrieve it later through an associative mechanism modelled upon the human memory, queried naturally via gesture.
 
-The third, and potentially most profound, transformation of digital information tools occurred with Web 2.0, the rise of a ``social Web'' replete with dedicated apps and services for managing and sharing nearly any kind of previously imagined personal information, ranging from the sensitive and intimate to the public.  
+% Two additional early projects that explored how such information archives might be realised were Ted Nelson's Xanadu \cite{nelson1987literary} and Douglas Engelbart's NLS \cite{engelbart1968research}. Both proposed that information environments could be interlinked through a global network of knowledge sharing, demonstrating many ideas in the 1960's that would not be realised in commercial systems for decades. While the former focused on hypertext and distributed collaboration, the latter focused on structured data collections, including data navigation, creation and management. Engelbart demonstrated an actual prototype of NLS in 1969, capable of synchronous collaboration, complete through a graphical user interface, that incorporated dynamic hierarchies, hyperlinks, and multi-view representations 
 
-Meanwhile, the data proliferated too. Seeking to monetise the flood of information people were putting online, markets for personal information quickly began to emerge, prompting concerns over privacy, security, and rights of access, which in turn have driven government and regulators’ interest towards giving citizens more protection over various aspects of how data about them could be collected and handled.  This led to international efforts to craft data protection legislation, as discussed above.  In terms of the provision of data to individuals, such legislation so far has focused on allowing data subjects to inspect the data an organisation holds about them; on receiving a subject access request, the organisation is obliged to correct inaccuracies, and to respect requirements that the data is not used in any way which may cause damage or distress, and that the data is not used for direct marketing purposes.
+% The introduction of the personal computer (PC) in 1984 provoked the development of the first generation of digital personal information management tools, consisting of a variety of application software products designed to help individuals create and maintain collections of digital data, ranging from flexible, schema-agnostic personal database systems like Filemaker \footnote{Filemaker - \url{www.filemaker.com}}, to specific data types, such as digital calendaring tools, and ``digital Rolodex'' address books. Seeking to appeal to the first generation of personal computer users, many of these applications borrowed metaphors from paper-based information collection tools, from the notion of ``documents'', to that of files and folders, and even notebook ledgers and personal diaries. Along with this deliberate shaping of digital information into forms designed to be familiar with paper information organiser came interaction metaphors and organisation methods for them; from deletion of information by ``throwing in the rubbish bin'' to ``desktop'' and ``filing cabinet''-based based information organisation and arrangement.
 
-However, this is a fairly minimal power which is hardly congruent with the increasing clamour concerning rights to data, including the spread of enforced transparency of data from the private sector \cite{fung2007} and the vogue for freedom of public sector information \cite{ohara2014}, and technology (and technology policy) together with new attitudes to transparency bring more possibilities. In the UK, a government initiative called \emph{midata} \cite{midata} is working to bring about the logical next step of customers getting direct and unfettered access to data kept about them by companies (other similar initiatives include the US Blue Button initiative\footnote{\url{www4.va.gov/bluebutton/}.} and the French Mesinfos group\footnote{\url{mesinfos.fing.org/}.}).  The ultimate success of \emph{midata} will be contingent on several important steps in both technology and regulation, most particularly including realising effective tools such as personal data stores for letting individual users easily consume, consolidate and make use of this data once it is made available.
+% Meanwhile, research in personal information management continued to pursue the vision put forth by Memex, towards methods of automatically building archives of personal life activities and experiences, so that these might be used as external memory prostheses. The pursuit of this vision was partially responsible for the development of handheld and early wearable computing technology, such as the Xerox PARC Tab \cite{schilit1993parctab}, arguably the first hand-held computer, which ran arguably the first automatic location-based personal lifelog, PEPYS~\cite{newman1991pepys}. Many systems that captured other aspects of context and activities soon followed, such as the Remembrance Agent by Rhodes et al., and the life archive by Clarkson et al., both at the MIT Media Lab's ``Cyborg'' Wearable Computing group. Since the breadth of kinds of activities and experiences that such systems captured transcended paper documents, such research required re-thinking the shape of data away from paper-metaphors to other kinds of collections, including \emph{information streams} (e.g., Lifestreams \cite{fertig1996lifestreams}) and chronological \emph{lifelogs}, such as MyLifeBits \cite{gemmell2002mylifebits}.
 
-\subsection{... To Mydex: Birth of the PDS concept}
+% % Good selection of stuff in the previous para - but why comment out the next sentence? Still seems relevant, although we should probably take out the “next decade” reference
 
-Independent of such legislative approaches, both academic and industry-led efforts also began to commit resources to research towards identifying ways that end-user citizens might, in the face of the vast growing repositories of data being held about them, enjoy more control and privacy. An academic consortium known as \emph{Vendor Relationship Management} (VRM) at Harvard's Berkman Center was realised to conduct multifaceted research into socio-legal-econo-technical approaches that might be employed.  Among the products of this research was a vision that users might stand as their own information brokers, and start to act as peers with service providers, capable of negotiating fair and equitable mutual terms of data use during interactions with them\cite{agustin2001vendor}.  Out of this work emerged the earliest mentions of Personal Data Stores for realising such capabilities in the context of online e-commerce, inspiring more than a dozen different Personal Data Store offerings, platforms and services backed by commercial start-ups since 2001~\cite{ctrlshift}. 
+% % The next decade saw specific evaluations of lifelogging in various specialised contexts, including healthcare for chronic disease maintenance, including memory prosthesis applications for Alzheimer's patients \cite{}, and cognitive behavioural therapy.
 
-As an example, consider Mydex, whose proof-of-concept offering dates back to 2009 \cite{heath2013}. Mydex designers worked with data-handling organisations to develop systems to support data transfer and sharing governed by consent and identity verification. Design principles included putting the individual PDS owner in sole charge of consent giving and revocation with a simple `on/off’ switch; giving the individual sole access to the private encryption key; verification of all organisations wishing access to data; and comprehensive data sharing agreements going beyond Data Protection Act protections. The business model for Mydex is still experimental, but currently the idea is to fund the stores by charging organisations for access to data; if the charge is set low enough, then they should save by side-stepping other access costs (e.g. the costs of writing a letter to the data subject). The Mydex services are currently free of charge to the individual. Mydex exploits cloud infrastructure with open source software, but  its PDSs are discrete collections of files encrypted and controlled by the individual, including --- and this seems prescient after the Snowden revelations\footnote{\url{www.theguardian.com/world/the-nsa-files, www.ub.uio.no/fag/informatikk-matematikk/informatikk/faglig/bibliografier/no21984.html}.} --- the ability to choose the location of the data centre in which the PDS is stored. Similar open source personal data storage containers include The Locker Project\footnote{\url{lockerproject.org}.}, data.fm\footnote{\url{data.fm}.}, Owncloud\footnote{\url{owncloud.org}.}, and OpenStack\footnote{\url{www.openstack.org}.}, each of which provides various degrees of easy-to-set-up `personal cloud’ software that can be used to
-store and host content on the user's own server on the Web.
+% The third, and potentially most profound, transformation of digital information tools occurred with Web 2.0, the rise of a ``social Web'' replete with dedicated apps and services for managing and sharing nearly any kind of previously imagined personal information, ranging from the sensitive and intimate to the public. 
+
+% Meanwhile, the data proliferated too. Seeking to monetise the flood of information people were putting online, markets for personal information quickly began to emerge, prompting concerns over privacy, security, and rights of access, which in turn have driven government and regulators' interest towards giving citizens more protection over various aspects of how data about them could be collected and handled. This led to international efforts to craft data protection legislation, as discussed above. In terms of the provision of data to individuals, such legislation so far has focused on allowing data subjects to inspect the data an organisation holds about them; on receiving a subject access request, the organisation is obliged to correct inaccuracies, and to respect requirements that the data is not used in any way which may cause damage or distress, and that the data is not used for direct marketing purposes.
+
+% 
+\subsection{Early PDS concepts}
+
+However, this is a fairly minimal power which is hardly congruent with the increasing clamour concerning rights to data, including the spread of enforced transparency of data from the private sector \cite{fung2007} and the vogue for freedom of public sector information \cite{ohara2014}, and technology (and technology policy) together with new attitudes to transparency bring more possibilities. In the UK, a government initiative called \emph{midata} \cite{midata} is working to bring about the logical next step of customers getting direct and unfettered access to data kept about them by companies (other similar initiatives include the US Blue Button initiative\footnote{\url{www4.va.gov/bluebutton/}.} and the French Mesinfos group\footnote{\url{mesinfos.fing.org/}.}). The ultimate success of \emph{midata} will be contingent on several important steps in both technology and regulation, most particularly including realising effective tools such as personal data stores for letting individual users easily consume, consolidate and make use of this data once it is made available.
+
+Independent of such legislative approaches, both academic and industry-led efforts also began to commit resources to research towards identifying ways that end-user citizens might, in the face of the vast growing repositories of data being held about them, enjoy more control and privacy. An academic consortium known as \emph{Vendor Relationship Management} (VRM) at Harvard's Berkman Center was realised to conduct multifaceted research into socio-legal-econo-technical approaches that might be employed. Among the products of this research was a vision that users might stand as their own information brokers, and start to act as peers with service providers, capable of negotiating fair and equitable mutual terms of data use during interactions with them\cite{agustin2001vendor}. Out of this work emerged the earliest mentions of Personal Data Stores for realising such capabilities in the context of online e-commerce, inspiring more than a dozen different Personal Data Store offerings, platforms and services backed by commercial start-ups since 2001~\cite{ctrlshift}. 
+
+As an example, consider Mydex, whose proof-of-concept offering dates back to 2009 \cite{heath2013}. Mydex designers worked with data-handling organisations to develop systems to support data transfer and sharing governed by consent and identity verification. Design principles included putting the individual PDS owner in sole charge of consent giving and revocation with a simple `on/off' switch; giving the individual sole access to the private encryption key; verification of all organisations wishing access to data; and comprehensive data sharing agreements going beyond Data Protection Act protections. The business model for Mydex is still experimental, but currently the idea is to fund the stores by charging organisations for access to data; if the charge is set low enough, then they should save by side-stepping other access costs (e.g. the costs of writing a letter to the data subject). The Mydex services are currently free of charge to the individual. Mydex exploits cloud infrastructure with open source software, but its PDSes are discrete collections of files encrypted and controlled by the individual, including --- and this seems prescient after the Snowden revelations\footnote{\url{www.theguardian.com/world/the-nsa-files, www.ub.uio.no/fag/informatikk-matematikk/informatikk/faglig/bibliografier/no21984.html}.} --- the ability to choose the location of the data centre in which the PDS is stored. Similar open source personal data storage containers include The Locker Project\footnote{\url{lockerproject.org}.}, data.fm\footnote{\url{data.fm}.}, Owncloud\footnote{\url{owncloud.org}.}, and OpenStack\footnote{\url{www.openstack.org}.}, each of which provides various degrees of easy-to-set-up `personal cloud' software that can be used to store and host content on the user's own server on the Web.
 
 %The potential impact of personal data store technology towards driving new models of e-commerce and new experiences for end-users has been the focus of substantial interest recently among independent research organisations. 
-
-A consistent theme of commentary in this area has seen Personal Data Stores (PDS) as important, if not essential, capability for end-users towards growing a healthier global ``personal data ecosystem''.  For example, an independent study commissoned by The World Economic Forum documented ways that the value of personal data might be further ``unlocked'', citing Personal Data Stores as a core enabling mechanism to turn end-users from consumers into more autonomous data brokers\cite{WEF-report}.  A separate comprehensive analysis by \emph{Ctrl-Shift} on emerging commercial PDS platforms and offerings projected an enormous economic opportunity for PDS services in the next five years\cite{ctrlshift}. In their view, PDSs are the key to making sense of the myriad data sources that now surround us, from data we volunteer, to the data that commemorates observations of our behaviour, to the data inferred about us, combined with the data we generate via management of our personal affairs (e.g. in health or finance), and also bringing in data about our activities as customers or consumers, including our contributions to loyalty card schemes.
+A consistent theme of commentary in this area has seen Personal Data Stores (PDS) as important, if not essential, capability for end-users towards growing a healthier global ``personal data ecosystem''. For example, an independent study commissioned by The World Economic Forum documented ways that the value of personal data might be further ``unlocked'', citing Personal Data Stores as a core enabling mechanism to turn end-users from consumers into more autonomous data brokers\cite{WEF-report}. A separate comprehensive analysis by \emph{Ctrl-Shift} on emerging commercial PDS platforms and offerings projected an enormous economic opportunity for PDS services in the next five years\cite{ctrlshift}. In their view, PDSes are the key to making sense of the myriad data sources that now surround us, from data we volunteer, to the data that commemorates observations of our behaviour, to the data inferred about us, combined with the data we generate via management of our personal affairs (e.g. in health or finance), and also bringing in data about our activities as customers or consumers, including our contributions to loyalty card schemes.
 
 \subsection{Failure to Launch: Barriers to PDS Adoption}
 
-Yet despite the extensive needs analysis and market potential identified, early personal data store offerings have thus far failed to attract substantial attention from users.  While a number of factors are likely responsible, so the lack of interest among users has been attributed to the fact that many of initial PDS platforms have sought to simply re-create existing end-user experiences offered by popular apps and Web platforms, rather than creating new functionality.  Despite the benefit that these PDS offerings provide in terms of data security, users are often less compelled to try something new if the tangible experience nothing new, while data security remains an abstract, inestimable threat which does not necessarily easily compel behaviour change \cite{bandura1977self}.  Finally, since the very purpose of PDS offerings is to protect user data from third party access, these platforms cannot derive revenue from user data and must resort to subscription models --- always less attractive to new users than than offerings that are completely free to use. 
+Yet despite the extensive needs analysis and market potential identified, early personal data store offerings have thus far failed to attract substantial attention from users. While a number of factors are likely responsible, so the lack of interest among users has been attributed to the fact that many of initial PDS platforms have sought to simply re-create existing end-user experiences offered by popular apps and Web platforms, rather than creating new functionality. Despite the benefit that these PDS offerings provide in terms of data security, users are often less compelled to try something new if the tangible experience nothing new, while data security remains an abstract, inestimable threat which does not necessarily easily compel behaviour change \cite{bandura1977self}. Finally, since the very purpose of PDS offerings is to protect user data from third party access, these platforms cannot derive revenue from user data and must resort to subscription models --- always less attractive to new users than than offerings that are completely free to use. 
 
-On top of these suppressors of the positive impulse to manage data, we must also remember that the markets work pretty well for some (the most powerful) operators, and so there is a great deal of inertia around. A dogmatic view of revealed preferences of course suggests that individuals’ lack of interest in the technology shows they have no desire to curate their own data. They happily click on privacy policies they have never read, and they buy the goods that are marketed to them, at least in sufficient quantities to justify the marketers’ costs. `Push’ models seem to be in the ascendant, because the data oligarchs are the only agents with access to the bigger picture of what data is held about you, what can be inferred from that data, what services are available, and how you relate to the general data context. `Pull’ models struggle, because individuals cannot see the opportunities that are around. In short, the argument is often made that the technological direction of travel is more or less set, that it serves the public good, that the public is uninterested in any alternative, and so, to coin a phrase, ``get over it.’’ This deterministic model has been called Zuckerbollocks \cite{ohara2013}, and it is important to challenge and resist it.
+On top of these suppressors of the positive impulse to manage data, we must also remember that the markets work pretty well for some (the most powerful) operators, and so there is a great deal of inertia around. A dogmatic view of revealed preferences of course suggests that individuals' lack of interest in the technology shows they have no desire to curate their own data. They happily click on privacy policies they have never read, and they buy the goods that are marketed to them, at least in sufficient quantities to justify the marketers' costs. `Push' models seem to be in the ascendant, because the data oligarchs are the only agents with access to the bigger picture of what data is held about you, what can be inferred from that data, what services are available, and how you relate to the general data context. `Pull' models struggle, because individuals cannot see the opportunities that are around. In short, the argument is often made that the technological direction of travel is more or less set, that it serves the public good, that the public is uninterested in any alternative, and so, to coin a phrase, ``get over it.'' This deterministic model has been called Zuckerbollocks \cite{ohara2013}, and it is important to challenge and resist it.
 
 % eMax: love it! and this next paragraph is incredible
 
-Heath et al write \cite{heath2013} that ``there is market evidence that [the person-centric model of control over personal data] is starting to establish itself,’’ but even they see a challenge to getting the model to work. Three conditions need to obtain simultaneously, on the account of Heath et al: PDSs must (i) make life simpler/better for the individual, (ii) appeal to data consumers by solving some of their problems (e.g. costs, or legal liability), and (iii) solve some pressing challenge that is holding back developers and entrepreneurs in this space. To these three, we can add a fourth, which is to rejig current data protection thinking. At the moment (2014), there are three key roles in the standard model of data protection: the data subject, the data controller and the data processor. The owner of a PDS is none of these (or none exclusively --- he or she is likely to be all three at various times), and it is hard to see how individuals can exercise autonomous control over the data that affects them without some recognition of them as active agents in a different kind of role. Furthermore, data protection legislation is intended to cover cases of personal data being misused by others; it does not cover cases where individuals accidentally (or deliberately) identify themselves. Of course, this is a reasonable starting point for protection, but if it is the only principle, it means that if an individual `takes charge’ of his or her data, he or she {\em loses} the cover of Data Protection Acts.
+Heath et al write \cite{heath2013} that ``there is market evidence that [the person-centric model of control over personal data] is starting to establish itself,'' but even they see a challenge to getting the model to work. Three conditions need to obtain simultaneously, on the account of Heath et al: PDSes must (i) make life simpler/better for the individual, (ii) appeal to data consumers by solving some of their problems (e.g. costs, or legal liability), and (iii) solve some pressing challenge that is holding back developers and entrepreneurs in this space. To these three, we can add a fourth, which is to re-jig current data protection thinking. At the moment (2014), there are three key roles in the standard model of data protection: the data subject, the data controller and the data processor. The owner of a PDS is none of these (or none exclusively --- he or she is likely to be all three at various times), and it is hard to see how individuals can exercise autonomous control over the data that affects them without some recognition of them as active agents in a different kind of role. Furthermore, data protection legislation is intended to cover cases of personal data being misused by others; it does not cover cases where individuals accidentally (or deliberately) identify themselves. Of course, this is a reasonable starting point for protection, but if it is the only principle, it means that if an individual `takes charge' of his or her data, he or she {\em loses} the cover of Data Protection Acts.
 
-%This context thus has started to highlight some of the difficulties with introducing new PDS approaches within the existing, highly competitive and lucrative Web service and platform environment which has been powered by the economy of personal data.  This drove us seek 	
+%This context thus has started to highlight some of the difficulties with introducing new PDS approaches within the existing, highly competitive and lucrative Web service and platform environment which has been powered by the economy of personal data. This drove us seek 	
 
 \section{Six Not So Easy Pieces: Challenges towards Realising the PDS Vision}
 
 % Nice title! But more to the point an excellent list - do we even make this more prominent in the piece?
 
-The goal of providing individuals with the capacity to maintain their own information longitudinally imposes a number of challenges to supporting the kinds of information activities we have described.  In particular, we see six broad categories of challenge to be met; the first, most fundamental of which pertains to effective \emph{longitudinal keeping}.  Enabling individuals to keep their data safely for a long time, while ensuring its continued accessibility and usefulness impacts both the data formats and methods used to store them.  For example, since a person's physical computational hardware is likely to fail with age, methods need to be in place for ensuring robustness to such failures, such as multi-device replication and easy migration from older to new devices over time.   Moreover, as evidenced by Moore's law \cite{schaller1997moore}, since the technical capabilities and properties of such data storage devices and platforms are likely to change fundamentally, PDSes must be designed to accommodate (and take advantage of) such changes as they arise. The devices and technologies that have made the PDS vision possible date back only a couple of decades, whereas a safe haven for data such as we are envisaging might well have to last a working lifetime (before we even consider the issues surrounding inheritance of data after a death).
+The goal of providing individuals with the capacity to maintain their own information longitudinally imposes a number of challenges to supporting the kinds of information activities we have described. In particular, we see six broad categories of challenge to be met; the first, most fundamental of which pertains to effective \emph{longitudinal keeping}. Enabling individuals to keep their data safely for a long time, while ensuring its continued accessibility and usefulness impacts both the data formats and methods used to store them. For example, since a person's physical computational hardware is likely to fail with age, methods need to be in place for ensuring robustness to such failures, such as multi-device replication and easy migration from older to new devices over time.  Moreover, as evidenced by Moore's law \cite{schaller1997moore}, since the technical capabilities and properties of such data storage devices and platforms are likely to change fundamentally, PDSes must be designed to accommodate (and take advantage of) such changes as they arise. The devices and technologies that have made the PDS vision possible date back only a couple of decades, whereas a safe haven for data such as we are envisaging might well have to last a working lifetime (before we even consider the issues surrounding inheritance of data after a death).
 
-A second challenge is allowing individuals who might have little or no experience in the intricacies of data management to cope with the burden of data security and longitudinal maintenance.  Using current tools and services, for example, managing your data yourself still means taking pains to ensure that one's personal data is not lost to hardware and software failure, malicious attacks, or safely migrated to new platforms and devices; such efforts require vast investments of time, effort and expertise.  A general lack of expertise or willingness to do this  means that people currently rarely know how, or bother, to back up or consolidate their data. Thus it is no surprise that individuals have been motivated to outsource maintenance of their data to third parties, such as cloud providers.  In order to facilitate autonomy from such services, therefore, PDSes must seek to support directly, and automate where possible, tedious data maintenance tasks that have plagued PC users for decades.  Such automation could both ensure compliance for promoting data security and integrity, such as continuous backup regimes, thereby countering recent studies of the extremely low compliance of personal data backup and security maintenance practices \cite{chervenak1998protecting, grasso2006survey}.
+\subsubsection{Long-term data maintenance challenges}
+
+Enabling individuals to keep their data safely for a long time, while ensuring its continued accessibility and usefulness impacts both the data formats and methods used to store them.  For example, since a person's physical computational hardware is likely to fail with age, methods need to be in place for ensuring robustness to such failures, such as multi-device replication and easy migration from older to new devices over time.   Moreover, as evidenced by Moore's law \cite{schaller1997moore}, since the technical capabilities and properties of such data storage devices and platforms are likely to change fundamentally, PDSes must be designed to accommodate (and take advantage of) such changes as they arise. The devices and technologies that have made the PDS vision possible date back only a couple of decades, whereas a safe haven for data such as we are envisaging might well have to last a working lifetime (before we even consider the issues surrounding inheritance of data after a death).
+
+\subsubsection{Coping with Data Management Complexity}
+
+A second challenge is allowing individuals who might have little or no experience in the intricacies of data management to cope with the burden of data security and longitudinal maintenance. Using current tools and services, for example, managing your data yourself still means taking pains to ensure that one's personal data is not lost to hardware and software failure, malicious attacks, or safely migrated to new platforms and devices; such efforts require vast investments of time, effort and expertise. A general lack of expertise or willingness to do this means that people currently rarely know how, or bother, to back up or consolidate their data. Thus it is no surprise that individuals have been motivated to outsource maintenance of their data to third parties, such as cloud providers. In order to facilitate autonomy from such services, therefore, PDSes must seek to support directly, and automate where possible, tedious data maintenance tasks that have plagued PC users for decades. Such automation could both ensure compliance for promoting data security and integrity, such as continuous backup regimes, thereby countering recent studies of the extremely low compliance of personal data backup and security maintenance practices \cite{chervenak1998protecting, grasso2006survey}.
+
+%A separate set of challenges arises from the shift back from service-provider controlled data storage to a user-centered model of data management. Although this will re-empower users to control the organisation of their data spaces, and eliminate the pervasive problem of data fragmentation \cite{karger2006data}, \cite{heath2011linked}, the challenge with the increased flexibility that this approach affords is that it requires re-consideration of how third-party applications and services can interact with such data, which have traditionally been pre-defined to operate on a fixed, typically application-provider established, set of data representation(s) and manipulations. In a consolidated, user-centric data model, on the other hand, such representations may be be specified or modified by the individual, or by some other third-party application(s) on behalf of them, and thus applications themselves must be designed to accommodate such variability among representations.
+
+% Data Security and Legal compliance
+%The need to comply with local, national and international data handling requirements pose a fourth set of challenges. In particular, if PDSes are to support the storage of identifiable information, or more critically, regulated sensitive information such as individuals' medical records, then PDSes must implement a variety of security standards (e.g. \cite{mccallister2010guide}) to ensure secured storage. Perhaps more difficult might be achieving compliance with the additional data handling requirements imposed by these regulations beyond how it is stored and encrypted; in particular, key handling requirements and guaranteeing aspects of physical access to the machine(s). The integrity of data must also be secured --- for instance, although a patient should have the right to challenge and correct inaccurate medical data, if the PDS is to store a version of medical data that is likely to be used (for example, in support of medical treatment in a foreign country), the data would need not only to be accurate, but also of appropriate provenance in order to be properly adapted to the standard workflows of medical treatment.
+
+\subsubsection{Third-party Interoperability}
 
 A separate set of challenges arises from the shift back from service-provider controlled data storage to a user-centered model of data management. Although this will re-empower users to control the organisation of their data spaces, and eliminate the pervasive problem of data fragmentation \cite{karger2006data}, \cite{heath2011linked}, the challenge with the increased flexibility that this approach affords is that it requires re-consideration of how third-party applications and services can interact with such data, which have traditionally been pre-defined to operate on a fixed, typically application-provider established, set of data representation(s) and manipulations.  In a consolidated, user-centric data model, on the other hand, such representations may be be specified or modified by the individual, or by some other third-party application(s) on behalf of them, and thus applications themselves must be designed to accommodate such variability among representations.
 
-% Data Security and Legal compliance
-The need to comply with local, national and international data handling requirements pose a fourth set of challenges. In particular, if  PDSes are to support the storage of identifiable information, or more critically, regulated sensitive information such as individuals’ medical records, then PDSes must implement a variety of security standards (e.g. \cite{mccallister2010guide}) to ensure secured storage.  Perhaps more difficult might be achieving compliance with the additional data handling requirements imposed by these regulations beyond how it is stored and encrypted; in particular, key handling requirements and guaranteeing aspects of physical access to the machine(s). The integrity of data must also be secured --- for instance, although a patient should have the right to challenge and correct inaccurate medical data, if the PDS is to store a version of medical data that is likely to be used (for example, in support of medical treatment in a foreign country), the data would need not only to be accurate, but also of appropriate provenance in order to be properly adapted to the standard workflows of medical treatment.
+\subsubsection{Handling Other People's Data}
 
+The need to comply with local, national and international data handling requirements pose a fourth set of challenges. In particular, if  PDSes are to support the storage of identifiable information, or more critically, regulated sensitive information such as individuals' medical records, then PDSes must implement a variety of security standards (e.g. \cite{mccallister2010guide}) to ensure secured storage.  Perhaps more difficult might be achieving compliance with the additional data handling requirements imposed by these regulations beyond how it is stored and encrypted; in particular, key handling requirements and guaranteeing aspects of physical access to the machine(s). The integrity of data must also be secured --- for instance, although a patient should have the right to challenge and correct inaccurate medical data, if the PDS is to store a version of medical data that is likely to be used (for example, in support of medical treatment in a foreign country), the data would need not only to be accurate, but also of appropriate provenance in order to be properly adapted to the standard workflows of medical treatment.
+
+\subsubsection{Preserving Others' Privacy}
 % Protecting Privacy
-Even if PDSes were to achieve all of the aforementioned goals, individuals would still face the fact that service providers would inevitably continue to profile and amass information about them, as long as it aligned with their incentives to do so (and it is hard to imagine that it will not --- for instance, a service provider may need to gather a large amount of personal data in order to ensure correct and appropriate billing for its services).  Thus, if PDSes are to give users the degree of autonomy and independence from profiling, they would need to include privacy-enhancing technologies, such as IP anonymisers, user-agent randomisation and cookie blocking. This may be difficult or impossible to do on ``closed'' platforms such as iOS that prevent these techniques because they are perceived as ``hacking’’.
+Even if PDSes were to achieve all of the aforementioned goals, individuals would still face the fact that service providers would inevitably continue to profile and amass information about them, as long as it aligned with their incentives to do so (and it is hard to imagine that it will not --- for instance, a service provider may need to gather a large amount of personal data in order to ensure correct and appropriate billing for its services). Thus, if PDSes are to give users the degree of autonomy and independence from profiling, they would need to include privacy-enhancing technologies, such as IP anonymisers, user-agent randomisation and cookie blocking. This may be difficult or impossible to do on ``closed'' platforms such as iOS that prevent these techniques because they are perceived as ``hacking''.
 
+%Perhaps the ultimate set of challenges, however, pertain to accommodating change as it affects both the information itself and the practices and activities surrounding it, over the years that a PDSes is intended to operate. Technologies that bring in new ways that data is used and generated seem to be introduced every quarter, placing new demands how this information needs to be accessed, created and used. The most recent examples include wearable computing and ``always on'' wearable sensor technology, from simple devices such as Fitbits \footnote{Fitbits - \url{www.fitbit.com}} and Fuelbands\footnote{Nike+ Fuelband - \url{www.nike.com/fuelband}} that unobtrusively but nearly constantly measure simple aspects of an individual's activity, to complex computational devices that can both deliver and capture information in high fidelity and quantity anywhere, such as Google Glass\footnote{Google Glass - \url{www.google.com/glass}}. Such devices, as well as innovative new apps in can in some cases bring about changes in norms pertaining to people's activities, including the ways people think about technologies themselves.
+
+\subsubsection{Anticipating Future Needs}
 Perhaps the ultimate set of challenges, however, pertain to accommodating change as it affects both the information itself and the practices and activities surrounding it, over the years that a PDSes is intended to operate.  Technologies that bring in new ways that data is used and generated seem to be introduced every quarter, placing new demands how this information needs to be accessed, created and used.  The most recent examples include wearable computing and ``always on'' wearable sensor technology, from simple devices such as Fitbits \footnote{Fitbits - \url{www.fitbit.com}} and Fuelbands\footnote{Nike+ Fuelband - \url{www.nike.com/fuelband}} that unobtrusively but nearly constantly measure simple aspects of an individual's activity, to complex computational devices that can both deliver and capture information in high fidelity and quantity anywhere, such as Google Glass\footnote{Google Glass - \url{www.google.com/glass}}.  Such devices, as well as innovative new apps in can in some cases bring about changes in norms pertaining to people's activities, including the ways people think about technologies themselves.
 
 %% Maybe we should move the legal challenges down here??
-% Maybe - I’ve put something about durability in an earlier challenge, but I think that this is separate from the idea of longevity and durability. But the advantage of ending with this challenge is that it is in a sense the biggest, so I like it as it stands. We do need to make sure that this challenge is clearly distinct from the first two. I think it is, but maybe there’s a way of phrasing this that makes it clearer.
+% Maybe - I've put something about durability in an earlier challenge, but I think that this is separate from the idea of longevity and durability. But the advantage of ending with this challenge is that it is in a sense the biggest, so I like it as it stands. We do need to make sure that this challenge is clearly distinct from the first two. I think it is, but maybe there's a way of phrasing this that makes it clearer.
 
-Looking forward at some of the ways such technologies might impact information activities, some have looked at the possible consequences and implications that ever-increasing information capture and access might have on the kinds of activities mentioned above.  While Bell and Gemmel have argued \cite{bell2010total} that such increased capture and access could create near-perfect records of our daily lives, allowing people to examine with unprecedented scrutiny their everyday activities, others such as Mayer-Schonberger have argued that such a utopian views overlooks a great number of potential unintended consequences \cite{mayer-schonberger2013}.   
+Looking forward at some of the ways such technologies might impact information activities, some have looked at the possible consequences and implications that ever-increasing information capture and access might have on the kinds of activities mentioned above. While Bell and Gemmel have argued \cite{bell2010total} that such increased capture and access could create near-perfect records of our daily lives, allowing people to examine with unprecedented scrutiny their everyday activities, others such as Mayer-Schonberger have argued that such a utopian views overlooks a great number of potential unintended consequences \cite{mayer-schonberger2013}.  
 
-% Is the above para a direct comment on the preceding challenge? I wonder whether it wouldn’t be better placed elsewhere. It’s a good point to make - it might even be something for the intro.
+% Looking forward at some of the ways such technologies might impact information activities, some have looked at the possible consequences and implications that ever-increasing information capture and access might have on the kinds of activities mentioned above.  While Bell and Gemmel have argued \cite{bell2010total} that such increased capture and access could create near-perfect records of our daily lives, allowing people to examine with unprecedented scrutiny their everyday activities, others such as Mayer-Schonberger have argued that such a utopian views overlooks a great number of potential unintended consequences \cite{mayer-schonberger2013}.   
+
+% % Is the above para a direct comment on the preceding challenge? I wonder whether it wouldn't be better placed elsewhere. It's a good point to make - it might even be something for the intro.
 
 The difficulties that this community has encountered have led us to reconsider, from the ground up, the need(s) these platforms are meant to address, so that they can be used to design a platform that will fulfill needs beyond secure data storage, towards new applications that promote the more effective use of data in both personal and social contexts.
 
 
-The acm\_proc\_article-sp document class file itself is chock-full of succinct
-and helpful comments.  If you consider yourself a moderately
-experienced to expert user of \LaTeX, you may find reading
-it useful but please remember not to change it.
+% Heath et al write \cite{heath2013} that ``there is market evidence that [the person-centric model of control over personal data] is starting to establish itself,'' but even they see a challenge to getting the model to work. Three conditions need to obtain simultaneously, on the account of Heath et al: PDSs must (i) make life simpler/better for the individual, (ii) appeal to data consumers by solving some of their problems (e.g. costs, or legal liability), and (iii) solve some pressing challenge that is holding back developers and entrepreneurs in this space. To these three, we can add a fourth, which is to rejig current data protection thinking. At the moment (2014), there are three key roles in the standard model of data protection: the data subject, the data controller and the data processor. The owner of a PDS is none of these (or none exclusively --- he or she is likely to be all three at various times), and it is hard to see how individuals can exercise autonomous control over the data that affects them without some recognition of them as active agents in a different kind of role. Furthermore, data protection legislation is intended to cover cases of personal data being misused by others; it does not cover cases where individuals accidentally (or deliberately) identify themselves. Of course, this is a reasonable starting point for protection, but if it is the only principle, it means that if an individual `takes charge' of his or her data, he or she {\em loses} the cover of Data Protection Acts.
+
+%This context thus has started to highlight some of the difficulties with introducing new PDS approaches within the existing, highly competitive and lucrative Web service and platform environment which has been powered by the economy of personal data.  This drove us seek 	
+
+
+\section{Distributed Storage of Web Observatories}
+
+Additionally, there are operational challenges in implementing a distributed personal data store architecture. Specifically that of:
+
+\begin{enumerate}
+\item Distributed sharing
+\item Distributed authentication
+\item Distributed redundancy, synchronisation and replication 
+\end{enumerate}
+
+The problems of distributed sharing include issues of trusting external servers to be who they claim; and determining which information should be shared and which should be kept private.
+
+The problems of authentication are that of trusted identification of users within a distributed system. In a traditional system, a user would login to a system in order to authenticate, however in a distributed system, the user would have to register for each individual remote system, and associate each of their accounts together. Instead, we can use distributed identification system such as OpenID in order to enable a single identity across systems.
+
+The problems of synchronisation are that users who want to protect their data against catastrophic loss (i.e., from hardware failure), from network failure, or from unexpected intercept. A solution is to provide a system that automatically synchronises data between multiple redundant servers, and automatically fails-over to online servers when others go offline.
+
+\begin{figure}
+\centering
+\includegraphics[width=8.5cm]{indx.png}
+\caption{A social healthcare application running on the the INDX Personal Data Store, showing data from multiple sources evaluated together.}\label{fig:indx}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=8.5cm]{layercake.png}
+\caption{The INDX layer cake, showing how different technologies interact with each other.}\label{fig:layercake}
+\end{figure}
+
 
 \bibliographystyle{abbrv}
 \bibliography{socm2014-observing}
@@ -291,3 +316,4 @@ it useful but please remember not to change it.
 % That's all folks!
 
 \end{document}
+ 
