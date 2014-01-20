@@ -136,19 +136,7 @@
 
 \section{Introduction}
 
-The concept of a Web Observatory~\cite{wobs} was introduced to investigate methods 
-and mechanisms by which people, as a collective society, could be effectively studied 
-in academic research settings, by archiving and analysing the information traces they 
-created online.  As such traces become increasingly rich, driven by both increased use of the Web and the onslaught of 
-always-on smartphones, wearable sensors, that can measure the activities people 
-perform on and off- the Web, two shifts are occurring. The first is that the 
-boundaries between the activities previously considered ``off-line'' and those that were
-considered ``online'' are dissolving, meaning that all activities are being increasingly 
-reflected in information about them on-line. A result of this is that the quantity, 
-fidelity, sensitivity, and resulting value of this information is increasing -
-both in terms of potential value to individuals (as a multi-purposable accurate record 
-of their activities), and to third parties seeking to offer and provide services 
-to people based on their lifestyle(s) and needs. 
+The concept of a Web Observatory~\cite{wobs} was introduced to investigate methods and mechanisms by which people, as a collective society, could be effectively studied in academic research settings, through the archival and analysis of the information traces they created online.  As such traces have become increasingly rich, driven by both increased use of the Web and the onslaught of always-on smartphones, wearable sensors, and other devices that can measure the activities people perform on and off- the Web, two shifts have occurred. The first is that the boundaries between the activities previously considered ``off-line'' and those that were considered ``online'' is rapidly dissolving, meaning that all activities are being increasingly reflected in information about them on-line. A result of this is that the quantity,  fidelity, sensitivity, and resulting value of this information is increasing - both in terms of potential value to individuals (as a multi-purposable accurate record of their activities), and to third parties seeking to offer and provide services to people based on their lifestyle(s) and needs. 
 
 An implication of these two trends is that Web Observatories will no longer
 be solely about Web or what we currently think of as ``Web-based activities''
@@ -157,30 +145,17 @@ rather, these observatories will be about the individual, multifaceted lives
 of people.  From this perspective, it is unsurprising that significant privacy
 concerns may be raised about the large-scale collection of such data, 
 whether they be for scientific study or commercial application.  For example,
-even efforts driven by public bodies such as the NHS, such as the newly established
-\emph{Care.data}~\footnote{Care.data - A Modern Data Service for the NHS \url{http://care.data}}
-have received widespread criticism (e.g. \cite{RameshNHS}) about its aggregation of millions of Britons'
+even efforts driven by public bodies such as the NHS, such as the newly founded \emph{Care.data}~\footnote{Care.data - A Modern Data Service for the NHS \url{http://care.data}} have received widespread criticism (e.g. \cite{RameshNHS}) about its aggregation of millions of Britons'
 anonymised NHS patient records, even though such collection could drive
 medical research that might greatly advance the collective well-being \cite{caredata}.
 
 This in general is reflective of a core dilemma faced in the building of such
 observatories; Web observatories will contain information
-of increasing potential value to advancing scientific and academic research across
-domains, e.g. from medicine, to human-centered design, to cultural anthropology, 
-but such repositories also represent unprecedented privacy risks by potentially
-containing detailed, high-fidelity information about people's lives. 
+of increasing potential value to making fundamental advances across research domains (spanning medicine, to human-centered design, to cultural anthropology, for example) but such repositories also represent unprecedented privacy risks and targets for identity thieves, misuse by commerical entities and so on, being comprised of aggregations of detailed, high-fidelity information about people's lives. 
 
-In this position paper, we propose that a technical architecture about the way this sort
-of information is handled and stored may be able to resolve this dilemma. In
-particular, we introduce the notion of \emph{personal data store} as a core
-atomic component in a new kind of web observatory; one that is purely distributed
-and in collective control of its potentially milllions (or billions) of participants.
-We first approach this idea by outlining the key functions of a Web Observatory 
-through what they are meant to achieve, which we follow with a definition of 
-Personal Data Stores, including a summary of work done in this space before now.
-Then, we follow this up with the technical and societal implications of applying
-PDS architectures to building Web Observatories, and ways one might preserve 
-anonymity and privacy in such settings.
+In this position paper, we examine one potential solution path towards resolving this dilemma: a technical architecture that changes the core assumptions surrounding the roles of data observer, aggregator, and broker proposed in Web Observatory research thus far.  Specifically, we introduce the notion of \emph{personal data store} as a core atomic component in a new kind of web observatory; one that is purely distributed and in collective control of its potentially milllions (or billions) of participants. 
+
+We first approach this idea by outlining the key functions of a Web Observatory, through what they are meant to achieve, which we follow with a definition of Personal Data Stores, including a summary of work done in this space before now.  Then, we follow this up with the technical and societal implications of applying PDS architectures to building Web Observatories, focusing on identifying core challenges in this space, including preserving anonymity and privacy of members while promiting data sharing in such settings.
 
 % The Web has profoundly changed the ways that individuals live their day-to-day lives
 % through the connectedness afforded by the ability to connect with anyone, anywhere
